@@ -56,8 +56,6 @@ up a volume at `/var/lib/pedis` and exposes port `63790`.
 building:
 
 ```console
-
-$ cd pedis/docker
 $ docker build -t pedis .
 $ docker run -d -p 63790:63790 -v pedis-logs:/var/lib/pedis pedis
 ```
@@ -77,8 +75,8 @@ the server is capable of storing the following data-types natively:
 from pedis import Client
 
 client = Client()
-client.set('key', {'name': 'Charlie', 'pets': ['mickey', 'huey']})
+client.set('key', {'name': 'Hossein', 'pets': ['jessie', 'feighsho']})
 
 print(client.get('key'))
-{'name': 'Charlie', 'pets': ['mickey', 'huey']}
+{'name': 'Hossein', 'pets': ['jessie', 'feighsho']}
 ```
