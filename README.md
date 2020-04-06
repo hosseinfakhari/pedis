@@ -11,7 +11,7 @@ $ pip install pedis
 Alternatively, you can install from git:
 
 ```
-$ git clone https://github.com/semilanceata/pedis
+$ git clone https://github.com/hosseinfakhari/pedis
 $ cd pedis
 $ python setup.py install
 ```
